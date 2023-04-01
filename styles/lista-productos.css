@@ -1,0 +1,148 @@
+  /*-----------------------Banner-----------------------*/
+.destaque {
+	height: 315px;
+	background-image: url(../assets/banner-image.png);
+	background-size: 100vw;
+	background-repeat: no-repeat;
+	padding: 32px 32px 0px 32px;
+  }
+
+  .banner {
+	width: 751px;
+	height: 261px;
+	padding-left: 120px;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+  }
+
+  .banner h1 {
+	color: var(--texto-destaque);
+	font-size: 52px;
+	font-weight: bold;
+	text-shadow: 2px 2px 0px #323131, 5px 4px 0px rgb(0 0 0 / 15%);
+  }
+
+  .banner h4 {
+	color: var(--texto-destaque);
+	font-size: 22px;
+	font-weight: bold;
+	text-shadow: 2px 2px 0px #323131, 5px 4px 0px rgb(0 0 0 / 15%);
+  }
+
+  .banner button {
+	background-color: var(--morado-destaque);
+	border: none;
+	color: #fff;
+	height: 51px;
+	width: 151px;
+	transition: transform 0.3s ease;
+  }
+
+.banner button:hover{
+	background-color: var(--cian-destaque);
+	color: var(--morado-destaque);
+	transform: scale(1.1);
+}
+
+.banner button a {
+	display: flex;
+	padding: 12px;
+	color: inherit;
+	text-decoration: none;
+}
+
+
+  /*-----------------------Main-----------------------*/
+
+  .general-prods {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+  }
+
+  .seccion-productos {
+	height: 100%;
+	padding: 0px 150px 0px 150px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 10px;
+  }
+
+  .prod-titulo {
+	padding: 20px 110px 0px 120px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+
+  .prod-titulo .titulo {
+	font-size: 32px;
+	font-weight: bold;
+	padding: 30px;
+	color: #464646;
+  }
+
+  .mostrar-mas {
+	font-weight: bold;
+	margin-top: 25px;
+	color: var(--morado-destaque);
+	display: flex;
+	padding: 30px;
+  }
+
+  .div-verTodo {
+	display: flex;
+	gap: 0.4rem;
+	margin-right: 10px;
+	transition: transform 0.3s ease;
+  }
+
+  .div-verTodo:hover {
+	transform: scale(1.1);
+  }
+
+  .producto {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 32px;
+	transition: transform 0.3s ease;
+  }
+
+  .producto:hover {
+	transform: scale(1.1);
+  }
+
+  .verTodo {
+	width: 15px;
+	height: 15px;
+  }
+  
+  .product-name {
+	color: #464646;
+	font-weight: 500;
+	font-size: 14px;
+  }
+  .precio {
+	color: #464646;
+	font-weight: bold;
+	font-size: 16px;
+  }
+  
+  .ver-producto {
+	font-weight: bold;
+	font-size: 16px;
+  }
+  
+  img {
+	width: 176px;
+	height: 174px;
+	border-radius: 10%;
+  }
+  
+  h1,
+  p {
+	margin: 8px 0px 8px 0px;
+  }

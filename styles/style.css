@@ -1,0 +1,249 @@
+/*---------------Variaveis---------------*/
+
+:root {
+  --bg-color:#f1f1f1 ;
+  --input-placeholder: #666666;
+  --input-bg: #9e9e9e;
+  --texto-destaque: #ffffff;
+  --morado-destaque: #a102c9;
+  --cian-destaque: #00c3ff;
+  --bg-contacto: #747474;
+  font-family: "Releway", sans-serif;
+}
+
+/*---------------Normaliza - Reset-CSS---------------*/
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Releway", sans-serif;
+  background-color: var(--bg-color);
+  scroll-behavior: smooth;
+}
+
+nav .disclaimer {
+  font-size: 0.8em;
+  color: #999;
+  margin-top: 10px;
+  text-align: center;
+}
+/*---------------Padrão de projeto---------------*/
+
+ textarea:focus,
+input:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--input-placeholder);
+  padding: 2%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--morado-destaque);
+  font-weight: 800;
+  font-family: "Releway", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+/*---------------Header---------------*/
+
+header {
+  padding: 30px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.logo-busqueda {
+  width: 601px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.logo img {
+  height: 29.17px;
+  width: 50.02px;
+}
+
+.logo p {
+  font-size: 26px;
+  font-weight: bolder;
+  font-family: 'Airstrike Outline', sans-serif;
+  color: var(--cian-destaque);
+}
+
+.logo .logo-morado {
+  margin-left: 10px;
+  font-family: 'Airstrike', sans-serif;
+  color: var(--morado-destaque);
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+
+.logo-busqueda input {
+  margin-left: 10%;
+  width: 393px;
+  height: 40px;
+  border-radius: 30px;
+  padding: 1% 3%;
+  border: none;
+  background-color: var(--input-bg);
+  background-image: url("../assets/lupa.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 320px;
+}
+
+.login {
+  width: 600px;
+  display: flex;
+  justify-content: end;
+}
+
+.login button {
+  width: 182px;
+  height: 51px;
+  background: none;
+  border: solid 1px var(--morado-destaque);
+  color: var(--morado-destaque);
+  text-transform: uppercase;
+  transition: transform 0.3s ease;
+}
+
+.login button:hover {
+  background-color: var(--morado-destaque);
+  color: var(--texto-destaque);
+  transform: scale(1.1);
+}
+
+/*---------------Formulario Footer---------------*/
+
+.contacto {
+  background-color: var(--bg-contacto);
+  display: flex;
+  max-height: 100%;
+  justify-content: center;
+  padding: 4% 0;
+}
+
+.referencia {
+  display: flex;
+  width: 350px;
+  margin: 20px 0 0 0;
+}
+
+.referencia img {
+  width: 60px;
+  height: 40px;
+}
+
+.img-crud {
+  width: 250px;
+  height: 200px;
+}
+
+.referencia p {
+  font-size: 26px;
+  font-weight: bolder;
+  color: var(--morado-destaque);
+  margin-top: 5px;
+  margin-left: 6px;
+}
+
+.links-utiles {
+  display: flex;
+  flex-direction: column;
+  line-height: 40px;
+  width: 200px;
+  margin-right: 100px;
+}
+
+.links-utiles a {
+  color: black;
+  font-weight: normal;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 500px;
+}
+
+.form p {
+  font-weight: bolder;
+}
+
+.form input {
+  width: 95%;
+  position: relative;
+  height: 56px;
+  border: transparent;
+  margin-bottom: 20px;
+  box-sizing: content-box;
+  padding: 0.5% 2.7%;
+  color: var(--morado-destaque);
+}
+
+.form input:hover {
+  border-bottom: solid 2px var(--morado-destaque);
+  transition: linear 1s;
+}
+
+.label-nombre {
+  width: 100%;
+  position: absolute;
+  color: var(--input-placeholder);
+  top: 26%;
+  left: 3%;
+  transition: 0.5s;
+}
+
+.input-nombre:focus + .label-nombre {
+  top: 64px;
+  font-size: 14px;
+  z-index: 2;
+  transition: 0.2s;
+  color: var(--morado-destaque);
+}
+
+.form textarea {
+  width: 100%;
+  font-family: "Relaway", sans-serif;
+  border: transparent;
+  color: var(--morado-destaque);
+  margin-bottom: 20px;
+}
+
+.form button {
+  background-color: var(--morado-destaque);
+  border: none;
+  color: var(--texto-destaque);
+  height: 51px;
+  width: 180px;
+}
+
+
