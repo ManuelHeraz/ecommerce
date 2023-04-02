@@ -29,6 +29,6 @@ formulario.addEventListener("submit", (evento) => {
       inputDescripcion.value
     )
     .then(() => {
-      window.location.href = "../screens/index.html";
+      window.location.href = "../index.html";
     });
 });
